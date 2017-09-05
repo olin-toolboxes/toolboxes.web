@@ -1,0 +1,18 @@
+title: Olin Software Toolboxes
+
+collections:
+  exercises:
+    output: true
+    permalink: :path/
+  toolboxes:
+    output: true
+    permalink: :path/
+
+defaults:
+  - scope:
+      path: ''
+    values:
+      layout: default
+
+plugins:
+  - github-pages
