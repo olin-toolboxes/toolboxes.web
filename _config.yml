@@ -18,4 +18,8 @@ plugins:
   - github-pages
 
 exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
   - scripts
+  - vendor
