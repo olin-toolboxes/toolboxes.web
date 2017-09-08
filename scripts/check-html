@@ -12,6 +12,7 @@ bundle exec htmlproofer \
   --report-missing-names \
   --report-script-embeds \
   --url-ignore '/127.0.0.1/' \
+  "$@" \
   ./_site
 
 # External links are ignored for the following reasons:
