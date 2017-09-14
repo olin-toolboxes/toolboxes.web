@@ -1,7 +1,7 @@
 ---
 title: Word Frequency Analysis
 date: 2017-01-29 00:00:00 -05:00
-description: ''
+compatible: linux, macos
 ---
 
 {% include toc %}

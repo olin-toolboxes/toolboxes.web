@@ -13,6 +13,10 @@ defaults:
       path: ''
     values:
       layout: default
+  - scope:
+      type: toolboxes
+    values:
+      layout: toolbox
 
 plugins:
   - github-pages

@@ -1,7 +1,7 @@
 ---
 title: Image Processing
 date: 2017-01-22 00:00:00 -05:00
-description: ''
+compatible: linux, macos
 ---
 
 {% include toc %}

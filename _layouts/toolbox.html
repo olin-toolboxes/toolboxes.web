@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+{% assign platforms = 'linux macos windows' | split: ' ' %}
+<ul id="compatibility">
+  <li class="compatible"><i class="fa fa-check-circle-o" aria-hidden="true"></i> python3.x</li>
+  {% for platform in platforms %}
+    {% if page.compatible contains platform %}
+      <li class="compatible"><i class="fa fa-check-circle-o" aria-hidden="true"></i> {{ platform }}</li>
+    {% elsif page.incompatible contains platform %}
+      <li class="incompatible"><i class="fa fa-ban" aria-hidden="true"></i> {{ platform }}</li>
+    {% else %}
+      <li class="maybe-compatible"><i class="fa fa-question-circle-o" aria-hidden="true"></i> {{ platform }}</li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+{{ content }}

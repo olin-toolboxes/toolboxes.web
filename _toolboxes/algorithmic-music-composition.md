@@ -1,7 +1,7 @@
 ---
 title: Algorithmic Music Composition
 date: 2017-03-18 00:00:00 -04:00
-description: ''
+compatible: linux, macos
 ---
 
 {% include toc %}

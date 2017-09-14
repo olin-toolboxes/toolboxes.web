@@ -2,6 +2,7 @@
 title: Web Deployment
 date: 2017-03-26 21:03:00 -04:00
 description: Use Heroku to run a web application at a publically accessible URL.
+compatible: linux, macos
 ---
 
 {% include toc %}
