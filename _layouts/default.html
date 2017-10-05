@@ -1,82 +1,82 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>
-      {% if page.title == "Home" %}
-        {{ site.title }} &middot; {{ site.tagline }}
-      {% else %}
-        {{ page.title }} &middot; {{ site.title }}
-      {% endif %}
-    </title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
+  <title>
+    {% if page.title == "Home" %} {{ site.title }} &middot; {{ site.tagline }} {% else %} {{ page.title }} &middot; {{ site.title
+    }} {% endif %}
+  </title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
     #compatibility li {
       display: inline;
       list-style-type: none;
       padding-right: 20px;
     }
-    #compatibility .compatible { color: green }
-    #compatibility .incompatible { color: red }
-    #compatibility .maybe-compatible { color: orange }
-    </style>
-  </head>
 
-  <body>
+    #compatibility .compatible {
+      color: green
+    }
 
-    <nav class="navbar">
-      <div class="navbar-brand">
-        <a class="navbar-item is-size-1" href="/" style="font-size: 2.5rem">
+    #compatibility .incompatible {
+      color: red
+    }
+
+    #compatibility .maybe-compatible {
+      color: orange
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item is-size-1" href="/" style="font-size: 2.5rem">
           {{ page.title | default: site.title }}
         </a>
-      </div>
-    </nav>
+    </div>
+  </nav>
 
-    <nav class="breadcrumb" aria-label="breadcrumbs">
-      <ul>
-        {% assign components = page.url | split: '/' %}
-        {% assign url = components[0] %}
-        {% for component in components %}
-          {% assign is_active_class = '' %}
-          {% assign url = url | append: '/' | append: components[forloop.index0] | replace: '//', '/' %}
-          {% assign title = component | capitalize | replace: '-', ' ' | default: 'Home' %}
-          {% if forloop.last %}
-            {% assign is_active_class = 'is-active' %}
-            {% assign title = page.title | default: title %}
-          {% endif %}
-          <li class="{{ is_active_class }}"><a href="{{ url }}">
+  <nav class="breadcrumb" aria-label="breadcrumbs">
+    <ul>
+      {% assign components = page.url | split: '/' %} {% assign url = components[0] %} {% for component in components %} {% assign
+      is_active_class = '' %} {% assign url = url | append: '/' | append: components[forloop.index0] | replace: '//', '/'
+      %} {% assign title = component | capitalize | replace: '-', ' ' | default: 'Home' %} {% if forloop.last %} {% assign
+      is_active_class = 'is-active' %} {% assign title = page.title | default: title %} {% endif %}
+      <li class="{{ is_active_class }}"><a href="{{ url }}">
             {{ title }}
           </a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+
+  <section class="main-content container columns is-fullheight">
+
+    <aside class="menu column is-fullheight section">
+      <p class="menu-label">Toolboxes</p>
+      <ul class="menu-list">
+        {% assign toolboxes = site.toolboxes | sort: 'title' %} {% for page in toolboxes %}
+        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
         {% endfor %}
       </ul>
-    </nav>
+    </aside>
 
-    <section class="main-content container columns is-fullheight">
+    <div class="container column is-10 content">
+      {% if page.url != '/' %}
+      <h1 class="title">
+        {{ page.title }}
+      </h1>
+      {% endif %} {{ content }}
+    </div>
 
-        <aside class="menu column is-fullheight section">
-          <p class="menu-label">Toolboxes</p>
-          <ul class="menu-list">
-            {% assign toolboxes = site.toolboxes | sort: 'title' %}
-            {% for page in toolboxes %}
-              <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-            {% endfor %}
-          </ul>
-        </aside>
+  </section>
 
-        <div class="container column is-10 content">
-          {% if page.url != '/' %}
-            <h1 class="title">
-              {{ page.title }}
-            </h1>
-          {% endif %}
-          {{ content }}
-        </div>
+</body>
 
-    </section>
-
-  </body>
 </html>
