@@ -15,3 +15,11 @@
 #compatibility .maybe-compatible {
     color: orange
 }
+
+.content pre {
+    padding: 5px
+}
+
+pre code {
+    padding: 0
+}
