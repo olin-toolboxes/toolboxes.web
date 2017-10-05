@@ -24,7 +24,7 @@ sequence of steps to jump-start your next Flask app.
 In this toolbox, you'll be learning Flask. To do this, you'll first need to
 install Flask. Run the following command:
 
-    sudo pip3 install Flask
+    pip install Flask
 
 Grab the starter code for this toolbox exercise via the normal fork-and-clone
 method from <https://github.com/{{site.github.owner_name}}/Toolbox-Flask>.

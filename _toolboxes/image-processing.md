@@ -30,7 +30,7 @@ write OpenCV code in both Python and C++, we will of course be using the
 Python version. The following apt-get line will install the OpenCV library and
 the Python bindings.
 
-`$ sudo pip3 install opencv-python`
+`$ pip install opencv-python`
 
 Grab the starter code for this toolbox exercise via the normal fork-and-clone
 method from <https://github.com/{{site.github.owner_name}}/ToolBox-ComputerVision>.
