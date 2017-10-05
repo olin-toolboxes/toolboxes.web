@@ -24,7 +24,9 @@ sequence of steps to jump-start your next Flask app.
 In this toolbox, you'll be learning Flask. To do this, you'll first need to
 install Flask. Run the following command:
 
-    pip install Flask
+```bash
+$ pip install Flask
+```
 
 Grab the starter code for this toolbox exercise via the normal fork-and-clone
 method from <https://github.com/{{site.github.owner_name}}/Toolbox-Flask>.
@@ -68,8 +70,10 @@ Write this, save it as something like `hello.py`, and run it in terminal. Make
 sure to not call your application `flask.py` because this would conflict with
 Flask itself.
 
-    $ python hello.py
-     * Running on http://127.0.0.1:5000/
+```bash
+$ python hello.py
+ * Running on http://127.0.0.1:5000/
+```
 
 <p class="data-proofer-ignore" markdown="1">
 Now head over to <http://127.0.0.1:5000/>, and you should see your hello world
@@ -194,8 +198,10 @@ if __name__ == '__main__':
 
 And that's it! Again, follow the instructions
 
-    $ python hello.py
-     * Running on http://127.0.0.1:5000/
+```bash
+$ python hello.py
+ * Running on http://127.0.0.1:5000/
+```
 
 to run the application, and head over to <http://127.0.0.1:5000/>, and you
 should see your hello world greeting. It might not look very different, but

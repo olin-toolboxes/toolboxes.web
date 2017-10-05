@@ -68,8 +68,10 @@ in Python](http://deap.readthedocs.org/) (DEAP) framework, as well as
 [NumPy](http://www.numpy.org/) for collecting some statistics. Install them
 both by running:
 
-    $ pip install deap
-    $ pip install numpy
+```bash
+$ pip install deap
+$ pip install numpy
+```
 
 **Note:** The problem we will tackle in this exercise is simple enough that
 we could implement it from scratch with no framework, but DEAP is a powerful
@@ -165,7 +167,9 @@ of mutation possible in this exercise are:
 Once you've made the modifications in the previous section, it's time to
 evolve some text! To call your program, run:
 
-    $ python evolve_text.py [goal_message]
+```bash
+$ python evolve_text.py [goal_message]
+```
 
 where `goal_message` is an optional argument specifying the target text.
 Excerpts from a sample execution of the program are given below.

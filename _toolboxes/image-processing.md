@@ -30,7 +30,9 @@ write OpenCV code in both Python and C++, we will of course be using the
 Python version. The following apt-get line will install the OpenCV library and
 the Python bindings.
 
-`$ pip install opencv-python`
+```bash
+$ pip install opencv-python
+```
 
 Grab the starter code for this toolbox exercise via the normal fork-and-clone
 method from <https://github.com/{{site.github.owner_name}}/ToolBox-ComputerVision>.
@@ -96,7 +98,9 @@ In order to load the face detector, you will have to load `haarcascade_frontalfa
 To detect faces, *before you start grabbing frames from the video*, instantiate
 the face detector. Use the filepath of where you put the XML file, the location below would be in your Downloads folder.
 
+```python
     face_cascade = cv2.CascadeClassifier('~/Downloads/haarcascade_frontalface_alt.xml')
+```
 
 After grabbing each frame, run the face detector to get a list of faces in the
 image and then draw a red box around each detected face:
@@ -129,7 +133,9 @@ First, at the top of your file (right after you create `face_cascade`) create a
 NumPy matrix which controls the degree of blurring (the larger the matrix, the
 more blurring):
 
+```python
     kernel = np.ones((21, 21), 'uint8')
+```
 
 Next, in the loop where you draw the rectangles over the faces, use the kernel
 to blur the image

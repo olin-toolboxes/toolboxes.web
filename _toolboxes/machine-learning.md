@@ -46,7 +46,9 @@ really like this library for several reasons:
 To install scikit-learn and related dependencies, execute the following
 command:
 
-    $ pip install matplotlib scikit-learn scipy
+```bash
+$ pip install matplotlib scikit-learn scipy
+```
 
 Grab the starter code for this toolbox exercise via the normal fork-and-clone
 method from <https://github.com/{{site.github.owner_name}}/ToolBox-MachineLearning>.

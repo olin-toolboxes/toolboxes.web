@@ -31,9 +31,11 @@ Before you can get started with this exercise, you will need to download
 
 First, open up a terminal and execute the following commands. Answer "yes" to questions.
 
-    $ sudo add-apt-repository ppa:sonic-pi/ppa
-    $ sudo apt-get update
-    $ sudo apt-get install sonic-pi
+```bash
+$ sudo add-apt-repository ppa:sonic-pi/ppa
+$ sudo apt-get update
+$ sudo apt-get install sonic-pi
+```
 
 ### Test Sonic Pi
 
@@ -60,7 +62,9 @@ Then test **Sonic Pi** again.
 
 First, open up a terminal and execute the following command:
 
-    $ pip install python-sonic
+```bash
+$ pip install python-sonic
+```
 
 Grab the starter code for this toolbox via the normal fork-and-clone method
 from <https://github.com/{{site.github.owner_name}}/ToolBox-AlgorithmicMusic>.
@@ -74,7 +78,9 @@ happening.
 When you are comfortable with the given starter code, go ahead and run the
 Python script. Launch **Sonic Pi**, and then open a terminal and execute:
 
-    $ python blues_solo.py
+```bash
+$ python blues_solo.py
+```
 
 You should hear a _very_ short blues "solo" that consists of one very low note
 held for 1 beat. (By default we are playing at 45 beats per minute, so the
@@ -94,7 +100,9 @@ the previous note) and a duration in beats. For example, the following line
 represents a blues lick that consists of four notes. Each note ascends the
 blues scale one note and lasts for half a beat:
 
-    licks = [[(1, 0.5), (1, 0.5), (1, 0.5), (1, 0.5)]]
+```python
+licks = [[(1, 0.5), (1, 0.5), (1, 0.5), (1, 0.5)]]
+```
 
 Let's modify our code to repeat this lick four times by changing `blues_solo.py`
 in the following way:
