@@ -42,7 +42,7 @@ star have over depth-first search?
 
 ## Using the GUI
 
-To use the GUI/toy, first run `python3 astar.py` to bring up the pygame window.
+To use the GUI/toy, first run `python astar.py` to bring up the pygame window.
 Hit the 'l' key to switch to the 'add lava tiles' mode. Then you can click on
 any cell to add or remove a lava tile from that cell. Hit the spacebar at any
 time to have Paul plan (or re-plan) his path to the cake, and highlight that

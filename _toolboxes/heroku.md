@@ -102,7 +102,7 @@ Here's what to do:
 
     **`Procfile`**
 
-        web: python3 hello.py
+        web: python hello.py
 
     **`runtime.txt`**
 
@@ -120,8 +120,8 @@ Here's what to do:
     $ heroku local web
     ```
 
-    Running `heroku local` has the same effect as running `python3 hello.py`, but it uses the same `Procfile` that Heroku will use.
-    Running therefore `herokku local` tests more of what will happen “in production” than running `python3 hello.py` does.
+    Running `heroku local` has the same effect as running `python hello.py`, but it uses the same `Procfile` that Heroku will use.
+    Running therefore `herokku local` tests more of what will happen “in production” than running `python hello.py` does.
     (See [The Twelve-Factor App: Dev/prod parity](https://12factor.net/dev-prod-parity).
 
 4. Now `git push heroku master` again. This time the deploy should succeed:

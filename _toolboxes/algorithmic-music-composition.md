@@ -74,7 +74,7 @@ happening.
 When you are comfortable with the given starter code, go ahead and run the
 Python script. Launch **Sonic Pi**, and then open a terminal and execute:
 
-    $ python3 blues_solo.py
+    $ python blues_solo.py
 
 You should hear a _very_ short blues "solo" that consists of one very low note
 held for 1 beat. (By default we are playing at 45 beats per minute, so the
