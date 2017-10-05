@@ -52,8 +52,8 @@ resultant counter value to the disk.
 
 Hints:
 
-  * To see if the file already exists, you can use `os.path.exists` function which we have already imported for you as `exists`
-  * To move the file handle back to the beginning of the file (for instance after reading), use the command `f.seek(0, 0)` (assuming you called your open file `f`)
+* To see if the file already exists, you can use `os.path.exists` function which we have already imported for you as `exists`
+* To move the file handle back to the beginning of the file (for instance after reading), use the command `f.seek(0, 0)` (assuming you called your open file `f`)
 
 ## Turning in your toolbox assignment
 
