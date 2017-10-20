@@ -1,6 +1,8 @@
 title: Olin Software Toolboxes
 short_title: Olin Toolboxes
 
+yandex_key: 54ff22f6169ec95b
+
 collections:
   exercises:
     output: true
