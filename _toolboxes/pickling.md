@@ -1,7 +1,6 @@
 ---
 title: Pickling
 date: 2017-02-17 00:00:00 -05:00
-compatible: linux, macos
 ---
 
 {% include toc %}

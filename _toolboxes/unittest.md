@@ -1,7 +1,6 @@
 ---
 title: Unittest
 date: 2017-01-22 00:00:00 -05:00
-compatible: linux, macos
 ---
 
 Warning: This toolbox exercise involves OOP (Object Oriented Programming), and

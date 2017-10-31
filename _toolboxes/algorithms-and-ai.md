@@ -1,7 +1,6 @@
 ---
 title: Al and Algorithms
 date: 2017-02-17 00:00:00 -05:00
-compatible: linux, macos
 ---
 
 {% include toc %}
@@ -24,8 +23,7 @@ Thanks to Dennis Chen [2015 NINJA] for writing this toolbox.
 
 ## Get Set
 
-Before getting started, make sure you have pygame installed. The following
-apt-get line will install the pygame library.
+Before getting started, make sure you have pygame installed:
 
 ```bash
 $ pip install pygame

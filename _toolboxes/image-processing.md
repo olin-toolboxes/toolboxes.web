@@ -1,7 +1,6 @@
 ---
 title: Image Processing
 date: 2017-01-22 00:00:00 -05:00
-compatible: linux, macos
 ---
 
 {% include toc %}
@@ -27,7 +26,7 @@ of the blurred out face. The end-result will look something like this:
 
 Before getting started, make sure you have OpenCV installed. While you can
 write OpenCV code in both Python and C++, we will of course be using the
-Python version. The following apt-get line will install the OpenCV library and
+Python version. The following line will install the OpenCV library and
 the Python bindings.
 
 ```bash
