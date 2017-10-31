@@ -29,7 +29,9 @@ Before you can get started with this exercise, you will need to download
 
 ### Install Sonic Pi
 
-First, open up a terminal and execute the following commands. Answer "yes" to questions.
+Download and install [Sonic Pi](http://sonic-pi.net).
+
+**Linux**:
 
 ```bash
 $ sudo add-apt-repository ppa:sonic-pi/ppa
