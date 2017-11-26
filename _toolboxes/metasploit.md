@@ -1,6 +1,6 @@
 ---
 title: Metasploit
-section: security
+category: security
 prerequisites: hacking-intro
 docs_url: https://docs.google.com/document/d/1TqDmeGv46zuvLEQdvTy8s3iNc_RdRtxs6cOnDOB7Dio/edit
 docs_pub_url: https://docs.google.com/document/d/e/2PACX-1vSMVQ6Mq9HWNbJGql80L1QPETPolExtXpidcfMb3uiD3GPWsus0qHN0HvED7CTL05Qx9LhQLMam58LF/pub

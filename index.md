@@ -1,5 +1,4 @@
 ---
-date: 2016-12-29 13:26:01 -05:00
 ---
 
 Software Design and Python are wide worlds, and we only explore part of them in SoftDes.
@@ -25,17 +24,19 @@ There are also lots of opportunities to take things further – many of the topi
 
 ## Toolboxes
 
-{% assign toolboxes = site.toolboxes | where_exp: 'item', 'item.section==null' | sort: 'title' %}
+{% assign toolboxes = site.toolboxes | where_exp: 'item', 'item.category==null' | sort: 'title' %}
 {% for toolbox in toolboxes %}
 * [{{ toolbox.title }}]({{ toolbox.url }}
 ){% endfor %}
 
-### Security Toolboxes
-
-{% assign toolboxes = site.toolboxes | where: 'section', 'security' | sort: 'title' | sort: 'order', 'last' %}
+{% assign categories = 'web-development,security' | split: ',' %}
+{% for category in categories %}
+### {% assign words = category | replace: '-', ' ' | split: ' '%}{% for w in words %}{{ w | capitalize }} {% endfor %}Toolboxes
+{% assign toolboxes = site.toolboxes | where: 'category', category | sort: 'title' | sort: 'order', 'last' %}
 {% for toolbox in toolboxes %}
 * [{{ toolbox.title }}]({{ toolbox.url }}
 ){% endfor %}
+{% endfor %}
 
 ## Submitting exercises
 

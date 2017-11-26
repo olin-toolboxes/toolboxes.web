@@ -1,6 +1,6 @@
 ---
 title: Web Deployment
-date: 2017-03-26 21:03:00 -04:00
+category: web-development
 description: Use Heroku to run a web application at a publicly accessible URL.
 prerequisites: web-apps
 ---
