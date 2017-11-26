@@ -25,6 +25,12 @@ layout: default
 </article>
 {% endif %}
 
+{% if page.prerequisites %}
+<p>
+  <em>Pre-requisites</em>: <a href="/{{page.prerequisites}}/">{{ page.prerequisites }}</a>
+</p>
+{% endif %}
+
 {{ content }}
 
 {% if page.docs_pub_url %}
