@@ -26,3 +26,12 @@ layout: default
 {% endif %}
 
 {{ content }}
+
+{% if page.docs_pub_url %}
+<hr/>
+Download this document <a href="{{ page.docs_pub_url }}">here</a>.
+{% endif %}
+
+{% if page.embed_url %}
+<iframe style="width: 100%; height: 100%" src="{{ page.embed_url }}"></iframe>
+{% endif %}

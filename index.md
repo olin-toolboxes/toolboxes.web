@@ -25,9 +25,17 @@ There are also lots of opportunities to take things further – many of the topi
 
 ## Toolboxes
 
-{% assign toolboxes = site.toolboxes | sort: 'title' %}
+{% assign toolboxes = site.toolboxes | where_exp: 'item', 'item.section==null' | sort: 'title' %}
 {% for toolbox in toolboxes %}
-* [{{ toolbox.title }}]({{ toolbox.url }}){% endfor %}
+* [{{ toolbox.title }}]({{ toolbox.url }}
+){% endfor %}
+
+### Security Toolboxes
+
+{% assign toolboxes = site.toolboxes | where: 'section', 'security' | sort: 'title' | sort: 'order', 'last' %}
+{% for toolbox in toolboxes %}
+* [{{ toolbox.title }}]({{ toolbox.url }}
+){% endfor %}
 
 ## Submitting exercises
 
