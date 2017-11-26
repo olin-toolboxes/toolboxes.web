@@ -31,8 +31,22 @@ There are also lots of opportunities to take things further – many of the topi
 
 {% assign categories = 'web-development,security' | split: ',' %}
 {% for category in categories %}
-### {% assign words = category | replace: '-', ' ' | split: ' '%}{% for w in words %}{{ w | capitalize }} {% endfor %}Toolboxes
+
+### {% assign words = category | append: ' Toolboxes' | replace: '-', ' ' | split: ' '%}{% for w in words %}{{ w | capitalize }} {% endfor %}
+
 {% assign toolboxes = site.toolboxes | where: 'category', category | sort: 'title' | sort: 'order', 'last' %}
+
+{% if false %}
+{% mermaid %}
+graph LR;
+{% for tb in toolboxes %}
+{% if tb.prerequisites %}
+    {{ tb.prerequisites }}-->{{ tb.slug }};
+{% endif %}
+{% endfor %}
+{% endmermaid %}
+{% endif %}
+
 {% for toolbox in toolboxes %}
 * [{{ toolbox.title }}]({{ toolbox.url }}
 ){% endfor %}

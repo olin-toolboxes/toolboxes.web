@@ -23,8 +23,12 @@ defaults:
 
 plugins:
   - github-pages
+  - jekyll-mermaid
 
 livereload: true
+
+mermaid:
+  src: 'assets/js/mermaid.min.js'
 
 exclude:
   - Gemfile

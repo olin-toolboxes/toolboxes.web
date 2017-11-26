@@ -23,3 +23,7 @@
 pre code {
     padding: 0
 }
+
+.label {
+    font-size: 9pt;
+}
